@@ -6,7 +6,7 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class ContextCheck implements ApplicationContextAware 
 {
 	{
