@@ -1,13 +1,18 @@
 package com.springcore.tasks;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 import com.springcore.services.Activity;
 
 public class Integrator {
 	
 	@Autowired
-	private Activity activity;
+	@Qualifier("doc")
+	private Activity x;
+	@Autowired 
+	@Qualifier("pack")
+	private Activity y;
 	
 	{
 		System.out.println("Integrator Instantiated");
@@ -16,6 +21,7 @@ public class Integrator {
 	}
 
 	public void job() {
-		activity.perform();
+		x.perform();
+		y.perform();
 	}
 }

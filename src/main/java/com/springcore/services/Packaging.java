@@ -2,13 +2,13 @@ package com.springcore.services;
 
 import org.springframework.stereotype.Component;
 
-@Component("doc")
-public class Documenting implements Activity{
+@Component("pack")
+public class Packaging implements Activity {
 
 	@Override
 	public void perform() {
 		// TODO Auto-generated method stub
-		System.out.println("Performing Documentation");
+         System.out.println("Packaging activity");
 	}
 
 }
